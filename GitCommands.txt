@@ -1,0 +1,15 @@
+git init --Inicializa un repositorio en una carpeta, Arranca el repositorio
+git add nombreArchivo.extension -- Avisa al repositorio sobre la existencia de este nombreArchivo
+--con esto el sistema de cambios de git sabe que existe tal archivo
+git add . -- Añade todos los archivos de una carpeta
+--con esto el sistema de cambios de git sabe que existe tales archivos añadidos.
+git commit -m "Comentarios sobre la confirmación de cambios" -- Envia los ultimos cambios a la base de datos del sistema
+-- de control de versiones.
+===[Buena práctica]: Añadir Comentarios a los commit
+git status -- ver el estado del sistema de control de versiones
+git show -- cambios historicos hechos sobre un repositorio
+git log archivo.extension -- Muestra los cambios historicos sobre un archivo especifico.
+git push -- Enviar los cambios hacia un repositorio.
+git pull -- trae los ultimos cambios de un repositorio.
+
+

@@ -1,0 +1,7 @@
+apt-get --
+[Buena práctica]: Antes de instalar cualquier software es buena práctica primero hacer update y luego upgrade.
+sudo apt-get update -- Actualizar paquetes
+sudo apt-get upgrade -- instalar paquetes
+sudo apt-get install git -- Tan fácil para instalar git!!
+git -- Para comprobar que tenemos git
+pwd -- Para comprobar en que directorio estamos.
