@@ -5,3 +5,17 @@ sudo apt-get upgrade -- instalar paquetes
 sudo apt-get install git -- Tan fácil para instalar git!!
 git -- Para comprobar que tenemos git
 pwd -- Para comprobar en que directorio estamos.
+
+ls -- Lista los archivos.
+ls -al -- Que me muestre todos los archivos incluso los ocultos.
+ls -l --Todos los archivos excepto los ocultos.
+ls -a --Me muestra el grupo de archivos pero no en una lista.
+ctrl + l -- Para limpiar la pantalla.
+cd .. -- Para regresar al directorio anterior.
+cd -- Con solo cd nos manda al directorio raíz.
+touch nombreArchivo.extension -- Para crear archivos
+cat nombreArchivo.extension -- Para mostrar el contenido de un archivo.
+history -- Me muestra el historial de comandos utilizados.
+!23 -- En este caso se ejecuta el numero de comando 23 de la lista de la historia generado por el comando history
+rm nombreArchivo.extension -- borra un archivo especifico.
+nombreComando --help  -- Muestra la ayuda para un comando especifico.

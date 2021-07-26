@@ -12,4 +12,7 @@ git log archivo.extension -- Muestra los cambios historicos sobre un archivo esp
 git push -- Enviar los cambios hacia un repositorio.
 git pull -- trae los ultimos cambios de un repositorio.
 
+--Git solo puede guardar y modificar archivos de texto plano, igual maneja archivos binarios pero no es tan preciso.
+
+
 
