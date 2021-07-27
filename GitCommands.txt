@@ -13,6 +13,9 @@ git push -- Enviar los cambios hacia un repositorio.
 git pull -- trae los ultimos cambios de un repositorio.
 
 --Git solo puede guardar y modificar archivos de texto plano, igual maneja archivos binarios pero no es tan preciso.
-
-
+git rm --cached historia.txt ---Con este comando quitamos de la base de datos del sistema de cambios el archivo en cuestion.
+git config --list   ---- Para ver cual es la configuración de las variables de git
+git config --list --show-origin --- Muestra en donde se guardan las configuraciones de Git.
+git config --global user.name "Juan Jimenez" --- Para modificar la variable de user.name
+git config --global user.email "jimenezduranjm@gmail.com"  --- Para modificar la variable de user.email
 
