@@ -18,4 +18,35 @@ git config --list   ---- Para ver cual es la configuración de las variables de 
 git config --list --show-origin --- Muestra en donde se guardan las configuraciones de Git.
 git config --global user.name "Juan Jimenez" --- Para modificar la variable de user.name
 git config --global user.email "jimenezduranjm@gmail.com"  --- Para modificar la variable de user.email
+git show nombreArchivo.extension -- Muestra los cambios puntuales dentro de un archivo.
+git diff UUIDMOSTRECENTLY UUIDMOSTANTIGUO --Nos muestra la diferencia en los commits de una versión mas reciente a una mas antigua, esto claro
+                                          --no es regla
+
+--- ¿ Que pasa cuando escribo git init ?
+/**
+1.- Se crea un área en memoria RAM que se llama staging. Es un area en memoria RAM en donde en principio se agregaran los cambios.
+2.- Se crear un repositorio, /.git / folder, todos los cambios al final del proyecto.
+2.1.- Los archivos sin git add . estan en el estado untracked, sin rastrear
+3.- con git add . -- los archivos agregados pasan a vivir al staging, en este punto los archivos estan en espera de pasar el repositorio.
+Y los archivos pasan al status Tracked
+4.- git commit -- los archivos se van al repositorio, por defecto es nombre es master, pasan a estatus Tracked pero en el repositorio.
+commit 3c0daf601afee2a46d900e1233e7f47a3411575e nombre del commit en la base de datos de git
+**/
+
+git log -- Con este comando obtemos un listado de los commit hechos en el repositorio.
+
+/**
+
+"git reset nos permite volver a una versión anterior
+"existen dos tipo de reset, hard y soft"
+--hard todo vuelve al estado anterior, eliminar todos los demas commit despues del que se hizo el reset.
+--soft volvemos al estado anterior, pero lo que esté en staging se mantiene.
+**/
+
+git reset 3c0daf601afee2a46d900e1233e7f47a3411575e --hard   --- Esto elimina, es una forma de volver al pasado de una forma agresiva.
+git reset 3c0daf601afee2a46d900e1233e7f47a3411575e --soft
+
+git log --stat --- Nos muestra el listado de commits pero con el detalle de los cambios-
+
+git checkout 3c0daf601afee2a46d900e1233e7f47a3411575e historia.txt     ---Para obtener la versión de un commit especifico. Esto es solo para obtener.
 
