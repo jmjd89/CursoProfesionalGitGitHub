@@ -46,7 +46,11 @@ git log -- Con este comando obtemos un listado de los commit hechos en el reposi
 git reset 3c0daf601afee2a46d900e1233e7f47a3411575e --hard   --- Esto elimina, es una forma de volver al pasado de una forma agresiva.
 git reset 3c0daf601afee2a46d900e1233e7f47a3411575e --soft
 
-git log --stat --- Nos muestra el listado de commits pero con el detalle de los cambios-
+git log --stat      --- Nos muestra el listado de commits pero con el detalle de los cambios-
 
 git checkout 3c0daf601afee2a46d900e1233e7f47a3411575e historia.txt     ---Para obtener la versión de un commit especifico. Esto es solo para obtener.
+
+git rm --cached: Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro.
+git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+
 
