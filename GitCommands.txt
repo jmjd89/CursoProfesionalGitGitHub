@@ -5,7 +5,7 @@ git add . -- Añade todos los archivos de una carpeta
 --con esto el sistema de cambios de git sabe que existe tales archivos añadidos.
 git commit -m "Comentarios sobre la confirmación de cambios" -- Envia los ultimos cambios a la base de datos del sistema
 -- de control de versiones.
-===[Buena práctica]: Añadir Comentarios a los commit
+===[Buena práctica]: Añadir Comentarios a los co    mmit
 git status -- ver el estado del sistema de control de versiones
 git show -- cambios historicos hechos sobre un repositorio
 git log archivo.extension -- Muestra los cambios historicos sobre un archivo especifico.
@@ -50,7 +50,33 @@ git log --stat      --- Nos muestra el listado de commits pero con el detalle de
 
 git checkout 3c0daf601afee2a46d900e1233e7f47a3411575e historia.txt     ---Para obtener la versión de un commit especifico. Esto es solo para obtener.
 
-git rm --cached: Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro.
-git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+git rm ["opcion"] --cached nombreArchivo.extension  : Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro.
+git rm ["opcion"] --force nombreArchivo.extension : Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+
+/*
+    Para eliminar todos los archivos del staging
+*/
+
+git rm -r --cached .
+
+git branch nombreRama ---- Para crear una rama.
+
+git branch ----Para ver que ramas existen y en cual estoy.
+
+git status ----Desde aqui tambien podemos ver en que rama nos encontramos.
+
+git checkout nombreBranch  ---Para moverse hacia otras ramas.
+
+git commit -am "Comentarios"  ---- Lo que hace esta línea es hacer un git add y un git commit -m de un solo paso. Aclaro esto solo funciona
+-----con archivos que ya hayan estado en staging.
+
+git merge nombreBranch  ---- con esto hacemos merge con el branch actual y la rama especificada.
+
+git mergetools ---con esta opcion si nos da conflictos cuando queremos hacer merge podemos elegir como se fucionan los cambios.
+
+
+
+
+
 
 
