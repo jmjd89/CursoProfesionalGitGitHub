@@ -74,8 +74,26 @@ git merge nombreBranch  ---- con esto hacemos merge con el branch actual y la ra
 
 git mergetools ---con esta opcion si nos da conflictos cuando queremos hacer merge podemos elegir como se fucionan los cambios.
 
+[Buena práctica]: Agregar README.md desde el sitio de gitHub. Explica que hace el repositorio.
 
+git remote add origin https://gitHub.com/jmdj/Proyecto.git ---Con esto agregamos un origen remoto de nuestros archivos.
+[Buena práctica]: Se ponen origin por estandar de la industria.
 
+git remote --- Para conocer el origen de archivos a agregar.
+
+git remote -v ----Nos muestra que podemos hacer push y fetch.
+
+[Buena practica]: Lo siguiente lo deberiamos de hacer cada vez que se quiera subir cambios al repositorio remoto, esto nos asegura
+que tengamos los ultimos cambios.
+git pull origin master ----Nos traemos cambios desde el origen a la rama master.
+
+git pull origin master --allow-unrelated-histories ----Esto me permite traernos de github y fusionar o hacer merge entre dos ramas sin los mismos commits.
+
+--- Se debe de crear una llave pública y privada por cada usuario.
+
+git remote set-url origin git@github.com:jmjd89/PracticaGitLocal.git  ---- Cambiar a SSH la url de un repositorio, lo cambia para fetch y push.
+
+git push origin master ----enviando los datos al repositorio remoto.
 
 
 
