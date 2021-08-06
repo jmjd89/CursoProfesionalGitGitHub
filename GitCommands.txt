@@ -95,6 +95,27 @@ git remote set-url origin git@github.com:jmjd89/PracticaGitLocal.git  ---- Cambi
 
 git push origin master ----enviando los datos al repositorio remoto.
 
+git log --all --graph
+
+git log --all --graph --decorate --oneline   ------ Te muestra el historial de commits de una forma reducida.
+
+git tag -a v0.1 -m "Resultado de las primeras clases del curso" hs7272  ---- Con este comando podemos versionar los commit hechos.
+
+git tag ----muestra todos los tags de los commits del repositorio.
+
+git show-ref --tags ---Muestra a detalle a que commit pertenece cada tag.
+
+git push origin --tags ---- Para subir las etiquetas a gitHub
+
+git tag -d nombreTag -----Para eliminar un tag especifico, aunque este no lo elimina al 100
+
+git push origin :refs/tags/dormido  ---Esto lo elimina desde el sitio de github
+
+
+
+
+
+
 
 
 

@@ -19,3 +19,5 @@ history -- Me muestra el historial de comandos utilizados.
 !23 -- En este caso se ejecuta el numero de comando 23 de la lista de la historia generado por el comando history
 rm nombreArchivo.extension -- borra un archivo especifico.
 nombreComando --help  -- Muestra la ayuda para un comando especifico.
+alias logProyecto="git log --all --decorate --oneline"    ----Esto es para generar un shortcout de un comando.
+
