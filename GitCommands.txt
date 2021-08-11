@@ -111,6 +111,8 @@ git tag -d nombreTag -----Para eliminar un tag especifico, aunque este no lo eli
 
 git push origin :refs/tags/dormido  ---Esto lo elimina desde el sitio de github
 
+algo
+
 
 
 
