@@ -114,7 +114,7 @@ git push origin :refs/tags/dormido  ---Esto lo elimina desde el sitio de github
 git show-branch --all  -----Muestra los branch creados localmente y los remotos.
 
 gitk  -----Te muestra los cambios en las ramas de una forma más visual.
-algo
+
 
 
 
