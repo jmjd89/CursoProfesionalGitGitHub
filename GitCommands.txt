@@ -116,6 +116,14 @@ git show-branch --all  -----Muestra los branch creados localmente y los remotos.
 gitk  -----Te muestra los cambios en las ramas de una forma más visual.
 
 
+/*
+
+    Desde GitHub podemos hacer bifurcaciones, lo que siginifica que podemos clonar
+    proyectos desde el repositorio de terceros y poder hacer PR desde nuestro
+    repositorio en gitHub hacia el repositorio original.
+
+*/
+
 
 
 
